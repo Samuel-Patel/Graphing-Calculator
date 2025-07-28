@@ -1,2 +1,2 @@
 # Graphing-Calculator
-Python based app for a graphing calculator using a basic implementation of marching squares.
+Python based graphing calculator app I created in 2023 using a basic implementation of marching squares.
