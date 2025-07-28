@@ -178,7 +178,7 @@ def vector_expression_to_function(expression_string, p_functions, p_variables, p
 
 
 if __name__ == "__main__":
-    functions = {  # functions here must be in ascending length
+    functions = {
         "ln": "np.log",
         "sin": "np.sin", "cos": "np.cos", "tan": "np.tan",
         "csc": "1/np.sin", "sec": "1/np.cos", "cot": "1/np.tan",
@@ -187,7 +187,7 @@ if __name__ == "__main__":
         "arcsinh": "np.arcsinh", "arccosh": "np.arccosh", "arctanh": "np.arctanh"
     }
     variables = ["r", "θ", "x", "y"]
-    constants = {"e": "np.e", "pi": "np.pi"}  # constants must also be in ascending length
+    constants = {"e": "np.e", "pi": "np.pi"}
     numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     operators = ["+", "-", "=", "*", "/", "^"]
     pstring = "sintancos(x)"
