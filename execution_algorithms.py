@@ -233,7 +233,7 @@ class VectorField:
 
 def create_expression(text):
     # Parameters for string parsing
-    functions = {  # functions here must be in ascending length
+    functions = {
         "ln": "np.log", "abs": "np.abs",
         "sin": "np.sin", "cos": "np.cos", "tan": "np.tan",
         "csc": "1/np.sin", "sec": "1/np.cos", "cot": "1/np.tan",
@@ -243,7 +243,7 @@ def create_expression(text):
         "arcsinh": "np.arcsinh", "arccosh": "np.arccosh", "arctanh": "np.arctanh"
     }
     variables = ["r", "θ", "x", "y"]
-    constants = {"e": "np.e", "π": "np.pi"}  # constants must also be in ascending length
+    constants = {"e": "np.e", "π": "np.pi"}
     numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     operators = ["+", "-", "=", "*", "/", "^"]
 
@@ -265,7 +265,7 @@ def create_expression(text):
 
 
 def create_vector(x, y):
-    functions = {  # functions here must be in ascending length
+    functions = {
         "ln": "np.log", "abs": "np.abs",
         "sin": "np.sin", "cos": "np.cos", "tan": "np.tan",
         "csc": "1/np.sin", "sec": "1/np.cos", "cot": "1/np.tan",
@@ -275,7 +275,7 @@ def create_vector(x, y):
         "arcsinh": "np.arcsinh", "arccosh": "np.arccosh", "arctanh": "np.arctanh"
     }
     variables = ["x", "y"]  # vector fields only use x, y
-    constants = {"e": "np.e", "π": "np.pi"}  # constants must also be in ascending length
+    constants = {"e": "np.e", "π": "np.pi"}
     numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     operators = ["+", "-", "*", "/", "^"]  # no = is required due to all vector fields being explicit
 
